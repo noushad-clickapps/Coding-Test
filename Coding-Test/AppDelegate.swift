@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Coding-Test
 //
-//  Created by Aman Aggarwal on 25/08/18.
-//  Copyright © 2018 Aman Aggarwal. All rights reserved.
+//  Created by Noushad on 8/24/18.
+//  Copyright © 2018 Noushad. All rights reserved.
 //
 
 import UIKit

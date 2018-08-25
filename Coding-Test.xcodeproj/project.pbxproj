@@ -12,6 +12,11 @@
 		DCD75D1521312B8200D60330 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD75D1321312B8200D60330 /* Main.storyboard */; };
 		DCD75D1721312B8200D60330 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCD75D1621312B8200D60330 /* Assets.xcassets */; };
 		DCD75D1A21312B8200D60330 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD75D1821312B8200D60330 /* LaunchScreen.storyboard */; };
+		DCD75D2421312B9B00D60330 /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD75D2221312B9B00D60330 /* CountryCell.swift */; };
+		DCD75D2521312B9B00D60330 /* CountryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCD75D2321312B9B00D60330 /* CountryCell.xib */; };
+		DCD75D2C21312BB300D60330 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD75D2721312BB200D60330 /* Country.swift */; };
+		DCD75D2D21312BB300D60330 /* CountryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD75D2921312BB200D60330 /* CountryViewModel.swift */; };
+		DCD75D2E21312BB300D60330 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD75D2B21312BB300D60330 /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		DCD75D1621312B8200D60330 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCD75D1921312B8200D60330 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCD75D1B21312B8200D60330 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCD75D2221312B9B00D60330 /* CountryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
+		DCD75D2321312B9B00D60330 /* CountryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountryCell.xib; sourceTree = "<group>"; };
+		DCD75D2721312BB200D60330 /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		DCD75D2921312BB200D60330 /* CountryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryViewModel.swift; sourceTree = "<group>"; };
+		DCD75D2B21312BB300D60330 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +66,49 @@
 			children = (
 				DCD75D0F21312B8200D60330 /* AppDelegate.swift */,
 				DCD75D1121312B8200D60330 /* ViewController.swift */,
+				DCD75D2121312B9B00D60330 /* CustomCells */,
+				DCD75D2621312BB200D60330 /* Model */,
+				DCD75D2A21312BB300D60330 /* Service */,
+				DCD75D2821312BB200D60330 /* ViewModel */,
 				DCD75D1321312B8200D60330 /* Main.storyboard */,
 				DCD75D1621312B8200D60330 /* Assets.xcassets */,
 				DCD75D1821312B8200D60330 /* LaunchScreen.storyboard */,
 				DCD75D1B21312B8200D60330 /* Info.plist */,
 			);
 			path = "Coding-Test";
+			sourceTree = "<group>";
+		};
+		DCD75D2121312B9B00D60330 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				DCD75D2221312B9B00D60330 /* CountryCell.swift */,
+				DCD75D2321312B9B00D60330 /* CountryCell.xib */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		DCD75D2621312BB200D60330 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DCD75D2721312BB200D60330 /* Country.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DCD75D2821312BB200D60330 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DCD75D2921312BB200D60330 /* CountryViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DCD75D2A21312BB300D60330 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DCD75D2B21312BB300D60330 /* Service.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +170,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCD75D2521312B9B00D60330 /* CountryCell.xib in Resources */,
 				DCD75D1A21312B8200D60330 /* LaunchScreen.storyboard in Resources */,
 				DCD75D1721312B8200D60330 /* Assets.xcassets in Resources */,
 				DCD75D1521312B8200D60330 /* Main.storyboard in Resources */,
@@ -136,8 +184,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCD75D2C21312BB300D60330 /* Country.swift in Sources */,
 				DCD75D1221312B8200D60330 /* ViewController.swift in Sources */,
 				DCD75D1021312B8200D60330 /* AppDelegate.swift in Sources */,
+				DCD75D2421312B9B00D60330 /* CountryCell.swift in Sources */,
+				DCD75D2D21312BB300D60330 /* CountryViewModel.swift in Sources */,
+				DCD75D2E21312BB300D60330 /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,11 +328,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Coding-Test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.iostutorialjunction.Coding-Test";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.noushad.Coding-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -290,11 +343,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Coding-Test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.iostutorialjunction.Coding-Test";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.noushad.Coding-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
